@@ -2,6 +2,9 @@
 
 This repository is about the first project from Udacity Full Stack Development nanodegree. This implements a class called Movie, that build an object necessary to using the fresh_tomatoes.py. This program create dynamically a web page using a list of Movies as input.
 
+## Features
+
+- A tooltip was insert to demostrate the storyline movie.
 
 ## Getting Started
 
@@ -28,19 +31,11 @@ python fresh_tomatoes.py
 
 ## How to Contribute
 
-Find any typos? Have another resource you think should be included? Contributions are welcome!
-
-First, fork this repository.
-
-Next, clone this repository to your desktop to make changes.
+If would like to contribuite com this code, please fork the repository.
 
 ```sh
 $ git clone https://github.com/ericmbf/project1FullStackDevelopment.git
 ```
-
-Once you've pushed changes to your local repository, you can issue a pull request by clicking on the green pull request icon.
-
-Instead of cloning the repository to your desktop, you can also go to `README.md` in your fork on GitHub.com, hit the Edit button (the button with the pencil) to edit the file in your browser, then hit the `Propose file change` button, and finally make a pull request. 
 
 ## License
 
