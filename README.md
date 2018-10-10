@@ -16,7 +16,7 @@ What things you need to install the software and how to install them
 
 2- A good browser
 
-3 - A terminal
+3- A terminal
 ```
 ## Steps
 
