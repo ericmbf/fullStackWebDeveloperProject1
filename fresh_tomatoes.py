@@ -40,7 +40,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #428bca!important;
             cursor: pointer;
         }
         .scale-media {
@@ -55,6 +55,15 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .navbar-inverse {
+            background-image: linear-gradient(to bottom,#428bca 0,#428bca96 100%);
+        }
+        .navbar-inverse .navbar-brand {
+            color: white;
+        }
+        .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+            text-shadow: 0 -1px 0 #5bc0de;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -107,7 +116,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">My Favorites Movies by Eric Hall</a>
           </div>
         </div>
       </div>
