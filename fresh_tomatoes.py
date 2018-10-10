@@ -16,6 +16,7 @@ main_page_head = '''
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="tooltip.js"></script>
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
@@ -42,6 +43,12 @@ main_page_head = '''
         .movie-tile:hover {
             background-color: #428bca!important;
             cursor: pointer;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;
+            text
+        }
+        .movie-tile:hover h2 {
+            color: white
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -65,6 +72,27 @@ main_page_head = '''
         .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
             text-shadow: 0 -1px 0 #5bc0de;
         }
+        .tooltip {
+            border-bottom: 1px dotted black;
+        }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -132,8 +160,10 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+        <img src="{poster_image_url}" width="220" height="342">
+    <a href="#" data-toggle="tooltip" data-placement="top" title="{storyline}">
+        <h2>{movie_title}</h2>
+    </a>
 </div>
 '''
 
@@ -154,7 +184,8 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            storyline=movie.storyline
         )
     return content
 
