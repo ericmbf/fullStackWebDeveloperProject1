@@ -31,6 +31,6 @@ donnie_darko = media.Movie("Donnie Darko",
     "https://upload.wikimedia.org/wikipedia/en/d/db/Donnie_Darko_poster.jpg",
     "https://www.youtube.com/watch?v=bzLn8sYeM9o")
 
-movies = [matrix, inception, the_dark_knight, the_prestige, donnie_darko]
+movies = [interstellar, matrix, inception, the_dark_knight, the_prestige, donnie_darko]
 
 fresh_tomatoes.open_movies_page(movies)
