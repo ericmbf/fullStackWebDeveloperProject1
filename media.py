@@ -1,8 +1,15 @@
 import webbrowser
 
-class Movie():
-    def __init__(self, title, storyline, poster_image_url, trailer_youtube_url):
-        """ This contruction is used to insert the title, storyline, image and trailer 
+
+class Movie:
+
+    def __init__(
+            self,
+            title,
+            storyline,
+            poster_image_url,
+            trailer_youtube_url):
+        """ This contruction is used to insert the title, storyline, image and trailer
         from movie.
 
         Args:
@@ -14,6 +21,7 @@ class Movie():
         Returns:
         Movie: A new intantiate movie with the args received.
     """
+
         self.title = title
         self.storyline = storyline
         self.poster_image_url = poster_image_url
