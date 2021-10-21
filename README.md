@@ -1,6 +1,9 @@
 # My Favorites Movies
 
-This repository is about the first project from Udacity Full Stack Development nanodegree. This implements a class called Movie, that build an object necessary to using the fresh_tomatoes.py. This program create dynamically a web page using a list of Movies as input.
+This repository is about the first project from Udacity Full Stack Development nanodegree. This implements a class called Movie, that build an object necessary to using the fresh_tomatoes.py. This program creates dynamically a web page using a list of Movies as input.
+
+![alt text](images/htmlOutput.png)
+
 
 ## Features
 
@@ -12,8 +15,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 ```
 1- Python 2.7.1
 
@@ -23,15 +24,19 @@ What things you need to install the software and how to install them
 ```
 ## Steps
 
-* You need to run the python program
+* All you have to do it is to run the python program with this command below on terminal:
 
 ```
-python fresh_tomatoes.py
+$ python entertainment_center.py
 ```
+This will create a file called "fresh_tomatoes.html" that you can open using
+your prefered browser. You can also click on movie to see the trailer. 
+
+The html should demonstrate the result of my favorites movies in HTML as show above.
 
 ## How to Contribute
 
-If would like to contribuite com this code, please fork the repository.
+If would like to contribuite with this code, please fork this repository using the command below.
 
 ```sh
 $ git clone https://github.com/ericmbf/project1FullStackDevelopment.git
